@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0 0.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.posts-list {
+  max-height: calc(100vh - 184px);
+  overflow-y: auto;
+}
+
+.post {
+  margin-top: 1rem;
+}
+
+.post i {
+  display: block;
+  font-size: 0.8rem;
+  color: #bcbcbc;
+}
+
+.full-size-wrapper {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 51px);
+}
+
+.full-size-wrapper h1,
+.full-size-wrapper form {
+  margin: auto;
+}
+
+.post-submit-form,
+.auth-submit-form {
+  margin-top: 1rem;
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-submit-form {
+  flex-direction: column;
+}
+
+.post-submit-form input {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  background-color: #dedede;
+}
+
+.user {
+  display: flex;
+  position: relative;
+  gap: 0.3rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user:hover::after {
+  position: absolute;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  background-color: #fff;
+  left: 1.5rem;
+  top: -1rem;
+  content: attr(data-info);
+  font-size: 0.8rem;
+}
+
+.user__name {
+  font-weight: 700;
+}
+
+.user__avatar {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center;
+  background-size: contain;
+}
